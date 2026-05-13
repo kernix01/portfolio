@@ -1,0 +1,110 @@
+body {
+    font-family: 'Kalam', cursive;
+    color: #ffffff;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(75deg, #000000, #0008ff);
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: #00b36e;
+}
+
+header {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    color: black;
+    height: 30px;
+    gap: 24px;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.hero {
+    background: linear-gradient(75deg, #4c00ff, #883a3a);
+    border-radius: 16px;
+    padding: 16px;    
+    width: 320px;
+    margin: auto;
+    margin-top: 32px;
+    transition: .35s ease;
+    overflow: hidden;
+}
+
+.hero:hover {
+    transform: scale(1.1)
+}
+
+
+
+.about {
+    background: linear-gradient(75deg, #ff0000, #520000);
+    border-radius: 16px;
+    padding: 16px;
+    margin: auto;
+    width: 320px;
+    margin-top: 16px;
+    transition: .35s ease;
+}
+
+.about:hover {
+    transform: scale(1.1);
+}
+
+.skills {
+    background: #fff;
+    color: #000000;
+    border-radius: 16px;
+    padding: 16px;
+    margin: auto;
+    width: 320px;
+    margin-top: 16px;
+    transition: .35s ease;
+}
+
+.skills:hover {
+    transform: scale(1.1);
+}
+
+.projects {
+    background: linear-gradient(75deg, #ae00ff, #ad8800);
+    border-radius: 16px;
+    padding: 16px;
+    margin: auto;
+    width: 320px;
+    margin-top: 16px;
+    transition: .35s ease;
+}
+
+
+.projects:hover {
+    transform: scale(1.1);
+}
+
+.contacts {
+    background: linear-gradient(75deg, #0051a8, #ac902a);
+    border-radius: 16px;
+    padding: 16px;
+    margin: auto;
+    width: 320px;
+    margin-top: 16px;
+    transition: .35s ease;
+}
+
+.contacts:hover {
+    transform: scale(1.1);
+}
+
+
+footer {
+    background: #0056b3;
+    text-align: center;
+    height: 28px;
+}
