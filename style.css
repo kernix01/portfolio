@@ -1,12 +1,12 @@
 /* Переменные для легкого изменения цветов */
 :root {
-    --bg-main: #fcfaff;         /* Нежно-белый с фиолетовым оттенком */
-    --bg-card: #ffffff;         /* Белый для карточек */
-    --primary: #7c3aed;         /* Насыщенный фиолетовый */
-    --primary-light: #ede9fe;   /* Пастельный фиолетовый для фонов */
-    --primary-dark: #6d28d9;    /* Темно-фиолетовый для ховера */
-    --text-main: #1f2937;       /* Темно-серый для текста */
-    --text-muted: #6b7280;      /* Сероватый для описаний */
+    --bg-main: #0b0813;         /* Очень темный, почти черный с фиолетовым отливом */
+    --bg-card: #130f22;         /* Темный цвет для карточек и шапки */
+    --primary: #a78bfa;         /* Светло-фиолетовый (неоновый) для текста и акцентов */
+    --primary-light: #2e1a47;   /* Темно-фиолетовый для фонов кнопок */
+    --primary-dark: #c084fc;    /* Яркий фиолетовый для ховера */
+    --text-main: #f3f4f6;       /* Белый/светло-серый для основного текста */
+    --text-muted: #9ca3af;      /* Серый для описаний */
     --font-kalam: "Kalam", cursive;
 }
 
@@ -31,7 +31,7 @@ header {
     align-items: center;
     padding: 1.5rem 10%;
     background-color: var(--bg-card);
-    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -41,6 +41,7 @@ header .logo {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--primary);
+    text-shadow: 0 0 10px rgba(167, 139, 250, 0.3);
 }
 
 header nav {
@@ -71,7 +72,8 @@ main {
 .hero {
     text-align: center;
     padding: 5rem 1rem;
-    background: linear-gradient(135deg, #f5f3ff, #ede9fe);
+    background: linear-gradient(135deg, #18112c, #130f22);
+    border: 1px solid rgba(167, 139, 250, 0.1);
     border-radius: 24px;
     margin-bottom: 3rem;
 }
@@ -80,6 +82,7 @@ main {
     font-size: 3.5rem;
     color: var(--primary);
     margin-bottom: 1rem;
+    text-shadow: 0 0 15px rgba(167, 139, 250, 0.4);
 }
 
 .hero p {
@@ -91,18 +94,20 @@ main {
 .hero a {
     display: inline-block;
     background-color: var(--primary);
-    color: white;
+    color: #0b0813;
     text-decoration: none;
     padding: 0.8rem 2rem;
     font-size: 1.3rem;
+    font-weight: 700;
     border-radius: 50px;
-    box-shadow: 0 4px 14px rgba(124, 58, 237, 0.3);
-    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 20px rgba(167, 139, 250, 0.4);
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
 }
 
 .hero a:hover {
     background-color: var(--primary-dark);
     transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(192, 132, 252, 0.6);
 }
 
 /* Общие стили для заголовков секций */
@@ -131,7 +136,8 @@ section h2::after {
     padding: 2.5rem;
     border-radius: 20px;
     margin-bottom: 3rem;
-    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.03);
+    border: 1px solid rgba(167, 139, 250, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .about p {
@@ -149,17 +155,18 @@ section h2::after {
     background-color: var(--bg-card);
     padding: 2rem;
     border-radius: 20px;
-    border: 2px solid transparent;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(167, 139, 250, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform 0.3s, border-color 0.3s;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 
 .projects .card:hover {
     transform: translateY(-5px);
-    border-color: var(--primary-light);
+    border-color: rgba(167, 139, 250, 0.3);
+    box-shadow: 0 10px 25px rgba(167, 139, 250, 0.1);
 }
 
 .projects .card h3 {
@@ -198,7 +205,8 @@ section h2::after {
     border-radius: 20px;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.03);
+    border: 1px solid rgba(167, 139, 250, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
@@ -216,13 +224,16 @@ section h2::after {
     font-size: 1.3rem;
     padding: 0.5rem 1.5rem;
     background-color: var(--primary-light);
+    border: 1px solid rgba(167, 139, 250, 0.1);
     border-radius: 12px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .contacts a:hover {
     background-color: var(--primary);
-    color: white;
+    color: #0b0813;
+    font-weight: 700;
+    border-color: var(--primary);
 }
 
 /* Подвал */
